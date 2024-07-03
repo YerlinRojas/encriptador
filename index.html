@@ -4,32 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
     <title>Encriptador de Texto</title>
 </head>
 <body>
     <header><img class="header_logo" src="./img/Logo.png" alt="Logo"></header>
     <main>
+
+        <div class="div-dark-button">
+            <button class="botone4" onclick="toggleTheme()"><img src="./img/modo-oscuro.png" alt="dark-mode"></button>
+        </div>
         <div class="main_text" >
             <div class="main_text_left">
-
             <div class="encriptador">
             <textarea name="paso1" id="paso1" placeholder="Ingrese el texto aquí"></textarea>
             </div>
 
             <div class="div_buttom">
-            <button>boton1</button>
-            <button>boton2</button>   
+            <button class="botone1" onclick="mostrarTexto(true)">Encriptar</button>
+            <button class="botone2" onclick="mostrarTexto(false)">Desencriptar</button>   
             </div>
 
             </div>
 
             <div class="encriptado">
-                <p>Encriptado</p>
+
+                    <div class="encriptado-hijo-logo" id="seccionOculta" style="display: block;">
+                        <div class="encriptado-logo">
+                            <img src="./img/encripdato-logo2.png" alt="encriptado-logo">
+                        </div>
+                        <p>Ningún mensaje fue encontrado</p>
+                        <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+                    </div>
+
+
+                <div class="encriptado-hijo" id="seccionMostrar" style="display: none;">
+                    <div>
+                        <p>
+                        Lorem i
+                    </p>
+                    </div>
+                    <div class="botone3-container">
+                    <button class="botone3" onclick="copiarTexto()">
+
+                      <img src="./img/icon-copy.png" alt="Copiar"> 
+                    </button>   
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <img class="logo-footer" src="./img/Logo.png" alt="">
+        </div>
+        <div>
+            <p class="letra-footer">
+                ENCRIPTADOR
+            </p>
+            <p class="letra-footer">
+                Developed by Yerlin Rojas
+            </p>
+        </div>
+    </footer>
+ 
+    <script src="./js/script.js"></script>
 </body>
 </html>
