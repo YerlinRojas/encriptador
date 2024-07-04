@@ -63,6 +63,7 @@ main {
     margin-top: 2%;
     flex: 1;
     overflow: auto;
+    padding: 0 5%;
     
     
 }
@@ -108,7 +109,7 @@ textarea{
 }
 
 .encriptado{
-    display: flex; 
+    display: flex;
     justify-content: center;   
     background-color: var(--color-white);
     border-radius: 15px;
@@ -120,15 +121,12 @@ textarea{
 
 
     .encriptado-hijo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        
         text-align:left ;
         max-width: 100%;
         overflow: hidden;
         padding: 5%;
-        position: relative; 
+        position: relative;
     }
 
     .encriptado-hijo-logo{
@@ -166,11 +164,10 @@ textarea{
         flex: 1; 
         height: 100%;
         border-radius: 15px;
-        background-color: var(--color-terciaria);
+        background-color: #a394b0;
         box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
         border: 0;
         color: var(--color-white);
-        font-family: var(--fuente-krona);
         cursor: pointer;
         max-width: 150px;
     }
@@ -183,15 +180,17 @@ textarea{
         border: 0;
         box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
         color: var(--color-white);
-        font-family: var(--fuente-krona);
         cursor: pointer;
         max-width: 150px;
     }
 
     .botone3-container {
+        display: flex;
+        justify-content: center;
         position: absolute;
-        bottom: 10px;
-        right: 10px; 
+        margin-left: 12px;
+        margin-top: 2%;
+        
     }
 
     .botone3{
@@ -226,6 +225,7 @@ textarea{
         color: var(--color-white);
         gap: 25px;
         margin-top: auto;
+        padding-top: 5px;
     }
 
     .logo-footer{
@@ -284,7 +284,7 @@ textarea{
 
         footer{
                 background-color: var(--dark-color-cuarto);
-                color: var(--color--black);
+                color: var(--color-text);
             }
 
         .botone1:hover{
@@ -303,5 +303,56 @@ textarea{
             }
         h3{
             color: var(--color-white);
+        }
+    }
+
+    @media (min-width: 600px) and (max-width: 900px) {
+        .main_text {
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 5%;
+        }
+        .main_text_left {
+            margin-left: 0; /* Elimina el margen izquierdo */
+            margin-bottom: 20px; /* Añade un margen inferior para separación */
+        }
+        textarea{
+            padding: 15px;
+
+        }
+        .div_buttom{
+            height: 30px;
+        }
+        .encriptado-hijo {
+            width: 100%; /* Asegúrate de que ocupe todo el ancho */
+            padding: 10px; /* Ajusta el padding si es necesario */
+        }
+        .botone1{
+            font-size: smaller;
+            border-radius: 10px;
+        }
+        .botone2{
+            font-size: smaller;
+            border-radius: 10px;
+        }
+
+        .botone3 img{
+            height: 30px;
+            }
+        
+        .letra-footer{
+            font-size: smaller;
+        }
+        .encriptado-hijo-logo{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 0;
+            
+        }
+    
+        .encriptado-hijo-logo p {
+            font-size: smaller;
         }
     }
