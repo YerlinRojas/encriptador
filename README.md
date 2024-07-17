@@ -13,6 +13,6 @@ Este es un simple encriptador de texto que utiliza [algoritmo de encriptación] 
 
 1. Clona este repositorio:
    ```bash
-
+   https://github.com/YerlinRojas/encriptador.git
 2. 
 
