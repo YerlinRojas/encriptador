@@ -71,7 +71,7 @@ main {
 .main_text_left{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 80% auto;
+    grid-template-rows: 80% auto auto;
     margin-left: 5%;
     
     
@@ -247,10 +247,30 @@ textarea{
         padding: 2px;
         background-color: var(--color-white);
         display: flex;
+        align-items: center;
+        font-weight: bold;
+        gap: 2px;
         border-radius: 70px;
         cursor: pointer;
     }
+    .div-exclamacion{
+        display: flex;
+        flex-direction: row;
 
+
+    }
+
+    .logo-exclamacion{
+        height: 15px;
+        
+         }
+        
+         .text-exclamacion{
+            color: var(--color-text);
+            font-family: var(--fuente-montserrat);
+            font-size: 12px;
+            
+         }
     [data-theme="dark"]{
 
         body{
@@ -313,19 +333,19 @@ textarea{
             gap: 5%;
         }
         .main_text_left {
-            margin-left: 0; /* Elimina el margen izquierdo */
-            margin-bottom: 20px; /* Añade un margen inferior para separación */
+            margin-left: 0; 
+            margin-bottom: 20px;
         }
         textarea{
             padding: 15px;
 
         }
         .div_buttom{
-            height: 30px;
+            height: 50px;
         }
         .encriptado-hijo {
-            width: 100%; /* Asegúrate de que ocupe todo el ancho */
-            padding: 10px; /* Ajusta el padding si es necesario */
+            width: 100%; 
+            padding: 10px;
         }
         .botone1{
             font-size: smaller;
@@ -355,4 +375,40 @@ textarea{
         .encriptado-hijo-logo p {
             font-size: smaller;
         }
+    }
+
+    @media (min-width: 100px) and (max-width: 599px){
+        .main_text {
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 5%;
+        }
+        .main_text_left {
+            margin-left: 0;
+            margin-bottom: 25px; 
+        }
+         
+        .div_buttom{
+            height: 30px;
+        }
+        .botone1{
+            font-size: smaller;
+            border-radius: 7px;
+        }
+        .botone2{
+            font-size: smaller;
+            border-radius: 7px;
+        }
+        .botone3 img{
+            height: 30px;
+            }
+
+        .header_logo{
+                margin-left: 5%;
+                margin-top: 2%;
+                border-radius: 7px;
+                height: 35px;
+            }
+            
+
     }
