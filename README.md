@@ -9,10 +9,20 @@ Este es un simple encriptador de texto que utiliza [algoritmo de encriptación] 
 - **Algoritmo de encriptación**: Se caracteriza por el intercambio de letras para asegurar la encriptacion.
 - **Interfaz de usuario**: Proporciona una interfaz simple y amigable para interactuar con el encriptador.
 
-## Instalación
 
-1. Clona este repositorio:
+## Instalación y Configuración
+
+1. Clona el repositorio:
    ```bash
-   https://github.com/YerlinRojas/encriptador.git
-2. 
+   git clone https://github.com/YerlinRojas/encriptador.git
+   
+2. Navega al directorio del proyecto:
+   ```bash
+   cd encriptador
 
+3. Instala las dependencias:
+   ```bash
+   npm install
+
+
+¡Gracias por apoyar este proyecto!
